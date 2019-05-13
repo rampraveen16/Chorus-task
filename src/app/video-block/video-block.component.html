@@ -1,0 +1,21 @@
+
+<div class="videoBlock">
+    <h2>{{ heading }}</h2>
+    <div class="videoBlock-element">
+      <video id='video'>
+      <source src={{src}} type='video/mp4'>
+      </video>
+      <i (click)="play()" [ngClass]="{'hide':hide==true}"></i>
+  </div>
+  <section class="conversationBlock" *ngIf="!error==true; else noId">
+    <div *ngFor="let ele of result">
+        <div class="conversationBlock-element" [ngClass]="{'rep':ele[0].speaker=='Rep'}">
+            <span><i>{{ele[0].speaker}}</i></span>
+            <p>{{ele[0].snippet}}</p>
+         </div>
+    </div>
+  </section>
+</div>
+<ng-template #noId>
+  <p class="errorText">{{errorText}}</p>
+</ng-template>

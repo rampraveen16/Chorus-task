@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'SF UI Text Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/SFUIText-Regular.woff') format('woff');
+    }
+     
+    @font-face {
+    font-family: 'SF UI Text Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/SFUIText-Light.woff') format('woff');
+    }
+    
+       
+    @font-face {
+    font-family: 'SF UI Text Medium';
+    font-style: normal;
+    font-weight: normal;
+    src:url('./assets/fonts/SFUIText-Medium.woff') format('woff');
+    }
+  
+    @font-face {
+    font-family: 'SF UI Text Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src:url('./assets/fonts/SFUIText-Semibold.woff') format('woff');
+    }   
+    @font-face {
+    font-family: 'SF UI Text Bold';
+    font-style: normal;
+    font-weight: normal;
+    src:url('./assets/fonts/SFUIText-Bold.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'SF UI Text Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src:url('./assets/fonts/SFUIText-Heavy.woff') format('woff');
+    }
+
+    * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+     html {
+         font-size: 10px;
+         height: 100%;
+     }
+
+    body {
+        font-family: 'SF UI Text Regular';
+        background: #f7f7f7;
+        position: relative;
+        min-height: 100%;
+    }
+    .wrapper {
+        background: #f7f7f7;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 1rem 1rem 50px;
+    }
+    footer {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        border-bottom: 5px solid #00b5cf;
+        bottom: 2px;
+
+        img {
+            max-width: 100%;
+            display: inline-block;
+        }
+    }
+    @media(min-width:480px){
+        html {
+            font-size:13.5px;
+        }
+    }
+    @media(min-width:640px){
+        html {
+            font-size:15px;
+        }
+    }
+    @media(min-width:720px){
+        html {
+            font-size:17px;
+        }
+        .wrapper {
+            padding: 3rem 3rem 50px;
+        }
+    }
+    @media(min-width:990px){
+        html {
+            font-size:16px;
+        }
+        .wrapper {
+            padding: 7rem 7rem 50px;
+        }
+    }
